@@ -1,0 +1,432 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.navbar .cross-icon,
+.navbar .menu {
+    display: none;
+}
+
+.padding-horizontal {
+    padding: 0px 100px;
+}
+
+.margin-top {
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 10px 0px;
+}
+
+.gap10 {
+    gap: 10px;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-page p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.blue-color {
+    color: #00bbf0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.primary-btn {
+    color: white;
+    background-color: #00bbf0;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 180px;
+    cursor: pointer;
+}
+
+.main-page {
+    height: 130vh;
+    width: 100%;
+    background-image: url("../images/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+
+.links i {
+    padding-right: 10px;
+}
+
+
+
+.main-page-content {
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.main-content-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image img {
+    width: 40vw;
+    animation-name: upDownAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* ---------service-section---- */
+
+.our-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 0px;
+    flex-wrap: wrap;
+}
+
+.service-cards-section {
+    margin: 30px 0px;
+    gap: 40px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 33%;
+    background-color: #f2f4f3;
+    /* background-color: rgb(245, 244, 244); */
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.service-card p {
+    margin: 0;
+}
+
+.service-card img {
+    height: 100px;
+    width: 100px;
+}
+
+.read-more {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    color: #00bbf0;
+}
+
+/* --------About-us--------- */
+
+.about-us {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    /* background-color:  #3f38be; */
+    background-color: #06014b;
+    padding: 100px 100px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+}
+
+
+.about-content img {
+    width: 50%;
+    height: auto;
+
+}
+
+.about-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+}
+
+/* --------choose us------------- */
+
+.choose-us {
+    margin: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.choose-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.choose-box p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.choose-box img {
+    height: 120px;
+    width: 120px;
+    padding: 25px;
+    border: 5px solid #06014b;
+    border-radius: 50%;
+}
+
+/* ---------our-team---------- */
+
+.our-team {
+    margin: 100px 0px;
+    padding: 100px 50px;
+    background-color: #06014b;
+    color: white;
+    align-items: center;
+    gap: 40px;
+}
+
+.team-cards-section {
+    width: 100%;
+    gap: 20px;
+}
+
+.team-card {
+    gap: 30px;
+    align-items: center;
+    width: 25%;
+    background-color: #1e1b64;
+    padding: 50px 0px;
+
+}
+
+.team-card img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: white;
+}
+
+
+/* ------------customers-section----------- */
+
+.customers {
+    margin: 100px 100px;
+    gap: 80px;
+    align-items: center;
+}
+
+.customer-card p {
+    margin: 0;
+    text-align: start;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.customers-cards-section {
+    gap: 30px;
+
+}
+
+.customer-card {
+    position: relative;
+    /* border: 1px solid grey; */
+    box-shadow: 5px 5px 15px rgb(196, 194, 194);
+    width: 46%;
+
+}
+
+.customer-card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 30px;
+}
+
+.card-detail {
+    padding: 70px 20px;
+    gap: 20px;
+
+}
+
+.client-arrow {
+    width: 100px;
+}
+
+.client-arrow a {
+    padding: 15px 20px;
+    width: 60px;
+    height: 50px;
+    border: 1px solid rgb(226, 219, 219);
+    box-shadow: 5px 5px 5px rgb(196, 194, 194);
+}
+
+/* -------------footer-section---------- */
+
+
+footer {
+    padding: 50px;
+    background-color: #06014b;
+    color: white;
+}
+
+.address {
+    gap: 30px;
+    align-items: start;
+}
+
+footer .social-media {
+    width: 150px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.info {
+    width: 30%;
+}
+
+.links {
+    gap: 30px;
+}
+
+
+.links-name {
+    gap: 20px;
+    text-align: start;
+}
+
+.sub-footer {
+    text-align: center;
+    margin: 25px 0;
+}
+
+@keyframes upDownAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translateY(100px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
